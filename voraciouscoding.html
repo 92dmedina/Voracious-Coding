@@ -27,12 +27,12 @@
         </div>
         <!--Logo/Banner-->
         <div id=banner>
-            <img src="banner.png" id="bannerPic">
+            <img src="img/banner.png" id="bannerPic">
         </div>
         <header class="vHeader">
             <div id="voraciousLogo">
                 <a href="voraciouscoding.html">
-                    <img id="voraciousIMG" src="240trans.png">
+                    <img id="voraciousIMG" src="img/240trans.png">
                 </a>
             </div>
             <!--Button Bar-->
@@ -42,10 +42,29 @@
                 <button class="vovoButton">Button</button>
                 <button class="vovoButton">Button</button>
                 <button class="vovoButton">Button</button>
-                <button class="vovoButton">Button</button>
+                <button class="vovoButton6" onclick="vovoModal();">Dashboard</button>
             </div>
         </header>
     </div>
+    <div id="myModal" class="modal fade right show">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="modalClose();">&times;</span>
+                <h2>Modal Header</h2>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the Modal Body</p>
+                <p>Some other text...</p>
+            </div>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
+        </div>
+
+    </div>
+
     <script>
         quoteEngine();
     </script>
