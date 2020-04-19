@@ -2,12 +2,13 @@ body {
     position: absolute;
     margin: auto;
     min-width: 1920px;
+    background-color: #e0d5ca;
 }
 
 .voraciousQuotes {
     min-width: min-content;
     position: absolute;
-    top: -7px;
+    top: -10px;
     left: 35%;
 }
 
@@ -16,6 +17,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 18px;
+    color: #ffffff;
 }
 
 #vHeader {
@@ -31,6 +33,7 @@ body {
 #banner {
     position: absolute;
     width: 100%;
+    z-index: -1;
 }
 
 #bannerPic {
@@ -44,7 +47,8 @@ body {
     left: 25%;
 }
 
-.vovoButton {
+.vovoButton,
+.vovoButton6 {
     cursor: pointer;
     padding: 4px;
     background-color: #ffffff;
@@ -130,29 +134,25 @@ body {
 
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 7s;
+    -webkit-animation-duration: 5s;
     animation-name: fade;
-    animation-duration: 7s;
+    animation-duration: 5s;
 }
 
 @-webkit-keyframes fade {
     from {
-        right: 0px;
         opacity: 0.1;
     }
     to {
-        left: 100px;
         opacity: 1;
     }
 }
 
 @keyframes fade {
     from {
-        right: 0px;
         opacity: 0.1;
     }
     to {
-        left: 100px;
         opacity: 1;
     }
 }
