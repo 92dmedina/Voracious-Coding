@@ -5,6 +5,36 @@ body {
     background-color: #e0d5ca;
 }
 
+
+/*Calendar and clock*/
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #17D4FE;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+}
+
+#calendar {
+    position: relative;
+    z-index: -1;
+}
+
+#vovoCalendar {
+    position: relative;
+    display: none;
+    border-width: 0;
+    width: 500px;
+    height: 500px;
+}
+
+
+/*Quote Engine*/
+
 .voraciousQuotes {
     min-width: min-content;
     position: absolute;
@@ -19,6 +49,9 @@ body {
     font-size: 18px;
     color: #ffffff;
 }
+
+
+/*Logo and Banner*/
 
 #vHeader {
     width: 100%;
@@ -41,6 +74,9 @@ body {
     width: 100%;
 }
 
+
+/*Button Bar*/
+
 #buttonBar {
     position: absolute;
     margin-top: 6%;
@@ -48,10 +84,11 @@ body {
 }
 
 .vovoButton,
-.vovoButton6 {
+.vovoButton6,
+.vovoButton5 {
     cursor: pointer;
     padding: 4px;
-    background-color: #ffffff;
+    background-color: white;
     display: inline-block;
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 36px;
@@ -78,6 +115,9 @@ body {
     color: #ffffff;
 }
 
+
+/*Modal*/
+
 .modal {
     display: none;
     position: fixed;
@@ -92,12 +132,12 @@ body {
 .modal-content {
     position: fixed;
     bottom: 0;
-    background-color: black;
+    background-color: linen;
     width: 100%;
 }
 
 
-/* The Close Button */
+/*Close Button for Modal */
 
 .close {
     color: white;
@@ -113,20 +153,19 @@ body {
     cursor: pointer;
 }
 
+
+/*Modal Content*/
+
 .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #333232;
     color: white;
 }
 
 .modal-body {
+    max-height: auto;
+    height: 500px;
     padding: 2px 16px;
-}
-
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
 }
 
 

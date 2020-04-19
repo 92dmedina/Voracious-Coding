@@ -41,35 +41,38 @@
                 <button class="vovoButton">Button</button>
                 <button class="vovoButton">Button</button>
                 <button class="vovoButton">Button</button>
-                <button class="vovoButton">Button</button>
                 <button class="vovoButton6" onclick="vovoModal();">Dashboard</button>
             </div>
         </header>
     </div>
     <!--Calendar-->
-    <div id=calendar> <iframe src="https://calendar.google.com/calendar/embed?height=500&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FDenver&amp;src=OTJkbWVkaW5hQGdtYWlsLmNvbQ&amp;src=MmMydGQ3YmEzNHVvdTNpcmdiazJwNzMxZ2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZmFtaWx5MTc2NTI2NDE5NDMzNzkxNjUwMDZAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%23AD1457&amp;color=%23F09300&amp;color=%237986CB&amp;title=Voracious%20Coding%20Calendar"
-            style="border-width:0" width="500" height="500" frameborder="0" scrolling="no">
-        </iframe>
     </div>
     <!-- Modal content -->
     <div id="myModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
                 <span class="close" onclick="modalClose();">&times;</span>
-                <h2>Modal Header</h2>
+                <button class="vovoButton6" onclick="calOpen();">Calendar</button>
             </div>
             <div class="modal-body">
-                <p>Some text in the Modal Body</p>
-                <p>Some other text...</p>
+                <div id="MyClockDisplay" class="clock">
+                    <script>
+                        showTime();
+                    </script>
+                </div>
+                <div id=calendar> <iframe id="vovoCalendar" src="https://calendar.google.com/calendar/embed?height=500&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FDenver&amp;src=OTJkbWVkaW5hQGdtYWlsLmNvbQ&amp;src=MmMydGQ3YmEzNHVvdTNpcmdiazJwNzMxZ2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZmFtaWx5MTc2NTI2NDE5NDMzNzkxNjUwMDZAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%23AD1457&amp;color=%23F09300&amp;color=%237986CB&amp;title=Voracious%20Coding%20Calendar">
+                </iframe>
+                </div>
+                <div class="modal-footer">
+                    <p>
+
+                    </p>
+                </div>
             </div>
-            <div class="modal-footer">
-                <h3>Modal Footer</h3>
-            </div>
+
         </div>
 
-    </div>
-
-    <script>
-        quoteEngine();
-    </script>
+        <script>
+            quoteEngine();
+        </script>
 </body>
