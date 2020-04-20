@@ -73,4 +73,4 @@ const showTime = () => {
 
     setTimeout(showTime, 1000);
 
-}
+};
